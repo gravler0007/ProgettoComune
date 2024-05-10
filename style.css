@@ -7,30 +7,32 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background-color:khaki;
+    background-color: khaki;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
+    
 .calculator{
-    background-color: gray;
+    background-color: black;
     padding: 25px;
     border-radius: 25px;
     height: 72.5vh;
 }
-
-
+    
+    
 /*--------------button--------------*/
 [type=button]{
     width: 22%;
     height: 7vh;
     border-radius: 10px;
     font-size: 20px;
+    font-weight: bold;
     margin: 10px 0;
     cursor: pointer;
 }
-
+    
 .display input{
     width: 100%;
     height: 10vh;
@@ -39,8 +41,41 @@
     font-size: 30px;
     margin-bottom: 4vh;
 }
-
+    
 .button-row{
     display: flex;
     justify-content: space-between;
 }
+
+#scientific{
+    padding: 5px;
+}
+
+#linkToScientific{
+    margin-bottom: 30px;
+}
+
+#division, #multiplication, #minus, #plus, #equal, #module, #pog{
+    background-color: orange;
+}
+
+#division:hover, #multiplication:hover, #minus:hover, #plus:hover, #equal:hover, #module:hover, #pog:hover{
+    background-color: orangered;
+}
+
+#AC, #DEL, #point{
+    background-color: lime;
+}
+
+#AC:hover, #DEL:hover, #point:hover{
+    background-color: darkgreen;
+}
+
+.number{
+    background-color:fuchsia;
+}
+
+.number:hover{
+    background-color: darkmagenta;
+}
+
