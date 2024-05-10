@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="display">
+            </div>
+            <div class="button-row">
+                <input type="button" id="AC" value="AC" class="operator" onclick="del()">
+                <input type="button" id="DEL" value="DEL" class="operator" onclick="delChar()">
+                <input type="button" id="point" value="." class="operator" onclick="append('.')">
+                <input type="button" id="division" value="/" class="operator" onclick="append('/')">
+            </div>
+            <div class="button-row">
+                <input type="button" id="seven" value="7" class="number" onclick="append('7')">
+                <input type="button" id="eight" value="8" class="number" onclick="append('8')">
+                <input type="button" id="nine" value="9" class="number" onclick="append('9')">
+                <input type="button" id="multiplication" value="*" class="operator" onclick="append('*')">
+            </div>
+            <div class="button-row">
+                <input type="button" id="four" value="4" class="number" onclick="append('4')">
+                <input type="button" id="five" value="5" class="number" onclick="append('5')">
+                <input type="button" id="six" value="6" class="number" onclick="append('6')">
+                <input type="button" id="minus" value="-" class="operator" onclick="append('-')">
+            </div>
+            <div class="button-row">
+                <input type="button" id="one" value="1" class="number" onclick="append('1')">
+                <input type="button" id="two" value="2" class="number" onclick="append('2')">
+                <input type="button" id="three" value="3" class="number" onclick="append('3')">
+                <input type="button" id="plus" value="+" class="operator" onclick="append('+')">
+            </div>
+            <div class="button-row">
+                <input type="button" id="pog" value="^" class="operator" onclick="append('**')">
+                <input type="button" id="zero" value="0" class="number" onclick="append('0')">
+                <input type="button" id="module" value="%" class="operator" onclick="append('%')">
+                <input type="button" id="equal" value="=" class="operator" onclick="calc()">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
