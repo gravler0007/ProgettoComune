@@ -47,6 +47,14 @@ let display = document.getElementById("display");
 //     });
 // })
 
+function fError() {
+    display.value = "ERROR";
+
+
+    setTimeout(() => {
+        del();
+    }, 2000);
+}
 
 function append(input) {
     display.value += input;
@@ -62,24 +70,17 @@ function calc() {
         display.value = eval(display.value);
     } catch (error){
         
-        error();
+        fError();
         console.error(error);
     }
 }
 
-function error() {
-    display.value = "ERROR";
 
-
-    setTimeout(() => {
-        del();
-    }, 2000);
-}
 
 function goniometricOperator(operator) {
 
     if (isNaN(display.value)) {
-        error();
+        fError();
     } else {
         let value = display.value;
         value = parseInt(value);  
@@ -98,21 +99,42 @@ function identifyOperator(selectedOperator, value) {
     let conversion;
     console.log(selectedOperator);
     switch (selectedOperator) {
+
         case "sin":
             conversion = Math.sin(value * Math.PI / 180);
             // console.log("here sine " + value);
             checkGoniometricOperator(value);
             break;
+        
         case "cos":
             conversion = Math.cos(value * Math.PI / 180);
             // console.log("here cos " + value);
             checkGoniometricOperator(value);
             break;
+        
         case "tan":
             conversion = Math.tan(value * Math.PI / 180);
             // console.log("here tan " + value);
             checkGoniometricOperator(value);
             break;
+        
+        case "e^":
+            console.log(value);
+            display.value = Math.exp(value);
+            
+            break;
+        
+        // case "":
+
+        //     break;
+        
+        // case "":
+
+        //     break;
+        
+        // case "":
+
+        //     break;
 
     }
 }
