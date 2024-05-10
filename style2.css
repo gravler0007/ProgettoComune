@@ -24,7 +24,7 @@
     
     
 /*--------------button--------------*/
-[type=button]{
+[type=button], #foto{
     width: 22%;
     height: 7vh;
     border-radius: 10px;
