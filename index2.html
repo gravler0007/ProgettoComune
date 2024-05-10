@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
     <title>Document</title>
 </head>
 <body>
     
     <div class="container">
+        <a href="index.html" id="linkToClassic"><button id="classic">Passa alla Calcolatrice Classica</button></a>
         <div class="calculator">
             <div class="display">
                 <input type="text" id="display">
             </div>
             <div class="button-row">
                 <!--1st row of buttons-->
-            <div class="button-row">
                 <input type="button" id="fraction" value="1/" class="operator" onclick="append('1/')">
                 <input type="button" id="exponential" value="!" class="operator" onclick="append('!')">
-                <input type="button" id="bracketL" class="operator" value="(" onclick="append('(')"/>
-                <input type="button" id="bracketR" class="operator" value=")" onclick="append(')')"/>
+                <input type="button" id="bracketL" class="operator" value="(" onclick="append('&#40;')"/>
+                <input type="button" id="bracketR" class="operator" value=")" onclick="append('&#41;')"/>
                 <input type="button" id="AC" value="AC" class="operator" onclick="del()">
                 <input type="button" id="DEL" value="DEL" class="operator" onclick="delChar()">
                 <input type="button" id="point" value="." class="operator" onclick="append('.')">
@@ -29,7 +30,7 @@
                 <input type="button" id="pog2" value="^2" class="operator" onclick="append('**2')"/>
                 <input type="button" id="pog3" value="^3" class="operator" onclick="append('**3')"/>
                 <input type="button" id="ePog" value="e^" class="operator" onclick="append('e**')"/>
-                <input type="button" id="10pog" value="10^" class="operator" onclick="append('10**')"/>
+                <input type="button" id="pog10" value="10^" class="operator" onclick="append('10**')"/>
                 <input type="button" id="seven" value="7" class="number" onclick="append('7')">
                 <input type="button" id="eight" value="8" class="number" onclick="append('8')">
                 <input type="button" id="nine" value="9" class="number" onclick="append('9')">
@@ -65,8 +66,7 @@
                 <input type="button" id="tan" value="tan" class="operator" onclick="append('tan')">
                 <input type="button" id="zero" value="0" class="number" onclick="append('0')">
                 <input type="button" id="equal" value="=" class="operator" onclick="calc()">
-                <input type="button" id="invisible1" value="" class="operator">
-                <input type="button" id="invisible1" value="" class="operator">
+                
             </div>
 
         </div>
