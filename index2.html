@@ -93,7 +93,7 @@
             id="ePog"
             value="e^"
             class="operator scientific-side"
-            onclick="identifyOperator('e**')"
+            onclick="append(Math.E)"
           />
           <input
             type="button"
@@ -209,7 +209,7 @@
             id="module"
             value="%"
             class="operator scientific-side"
-            onclick="append('%')"
+            onclick="identifyOperator('%')"
           />
           <input
             type="button"
@@ -253,28 +253,28 @@
             id="pi"
             value="π"
             class="operator scientific-side"
-            onclick="append('π')"
+            onclick="append(Math.PI)"
           />
           <input
             type="button"
             id="sin"
             value="sin"
             class="operator scientific-side"
-            onclick="append('sin')"
+            onclick="identifyOperator('sin')"
           />
           <input
             type="button"
             id="cos"
             value="cos"
             class="operator scientific-side"
-            onclick="append('cos')"
+            onclick="identifyOperator('cos')"
           />
           <input
             type="button"
             id="tan"
             value="tan"
             class="operator scientific-side"
-            onclick="append('tan')"
+            onclick="identifyOperator('tan')"
           />
           <input
             type="button"
