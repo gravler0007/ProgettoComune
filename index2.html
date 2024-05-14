@@ -7,41 +7,40 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container"> <!-- div che contiene calcolatrice e pulsante-link alla versione classica -->
       <a href="index.html" id="linkToClassic"
         ><button id="classic">Passa alla Calcolatrice Classica</button></a
       >
-      <div class="calculator">
+      <div class="calculator"> <!-- div che modella la calcolatrice -->
         <div class="display">
           <input type="text" id="display" />
         </div>
-        <div class="button-row">
-          <!--1st row of buttons-->
+        <div class="button-row"> <!-- prima riga di bottoni -->
           <input
             type="button"
             id="fraction"
             value="1/"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('1/')"
           />
           <input
             type="button"
             id="exponential"
             value="!"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('!')"
           />
           <input
             type="button"
             id="bracketL"
-            class="operator"
+            class="operator scientific-side"
             value="("
             onclick="append('&#40;')"
           />
           <input
             type="button"
             id="bracketR"
-            class="operator"
+            class="operator scientific-side"
             value=")"
             onclick="append('&#41;')"
           />
@@ -74,34 +73,33 @@
             onclick="append('/')"
           />
         </div>
-        <div class="button-row">
-          <!--2nd row of buttons-->
+        <div class="button-row"> <!-- seconda riga di bottoni -->
           <input
             type="button"
             id="pog2"
             value="^2"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('**2')"
           />
           <input
             type="button"
             id="pog3"
             value="^3"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('**3')"
           />
           <input
             type="button"
             id="ePog"
             value="e^"
-            class="operator"
+            class="operator scientific-side"
             onclick="identifyOperator('e**')"
           />
           <input
             type="button"
             id="pog10"
             value="10^"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('10**')"
           />
           <input
@@ -133,34 +131,33 @@
             onclick="append('*')"
           />
         </div>
-        <div class="button-row">
-          <!--3rd row of buttons-->
+        <div class="button-row"> <!-- terza riga di bottoni -->
           <input
             type="button"
             id="root2"
             value="2√"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('2√')"
           />
           <input
             type="button"
             id="root3"
             value="3√"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('3√')"
           />
           <input
             type="button"
             id="root"
             value="√"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('√')"
           />
           <input
             type="button"
             id="logN"
             value="ln"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('ln')"
           />
           <input
@@ -192,34 +189,33 @@
             onclick="append('-')"
           />
         </div>
-        <div class="button-row">
-          <!--4th row of buttons-->
+        <div class="button-row"> <!-- quarta riga di bottoni -->
           <input
             type="button"
             id="log10"
             value="log10"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('log10')"
           />
           <input
             type="button"
             id="pog"
             value="^"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('**')"
           />
           <input
             type="button"
             id="module"
             value="%"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('%')"
           />
           <input
             type="button"
             id="e"
             value="e"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('e')"
           />
           <input
@@ -251,34 +247,33 @@
             onclick="append('+')"
           />
         </div>
-        <div class="button-row">
-          <!--5th row of buttons-->
+        <div class="button-row"> <!-- quinta riga di bottoni -->
           <input
             type="button"
             id="pi"
             value="π"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('π')"
           />
           <input
             type="button"
             id="sin"
             value="sin"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('sin')"
           />
           <input
             type="button"
             id="cos"
             value="cos"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('cos')"
           />
           <input
             type="button"
             id="tan"
             value="tan"
-            class="operator"
+            class="operator scientific-side"
             onclick="append('tan')"
           />
           <input
@@ -295,9 +290,7 @@
             class="operator"
             onclick="calc()"
           />
-          <img src="./casio-logo-vector-1.svg" alt="logo Casio" id="foto" />
-          <!-- <input type="button" id="invisible1" value="" class="operator"> -->
-          <!-- <input type="button" id="invisible1" value="" class="operator"> -->
+          <img src="./casio-logo-vector-1.svg" alt="logo Casio" id="foto" /> <!-- logo Casio -->
         </div>
       </div>
     </div>

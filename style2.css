@@ -1,9 +1,11 @@
+/* CSS reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* stile applicato al div di classe container */
 .container{
     width: 100vw;
     height: 100vh;
@@ -13,7 +15,17 @@
     align-items: center;
     justify-content: center;
 }
-    
+
+/* stile applicato al pulsante-link alla versione classica */
+#classic{
+    padding: 5px;
+}
+
+#linkToClassic{
+    margin-bottom: 30px;
+}
+
+/* stile applicato al div di classe calculator */
 .calculator{
     background-color: black;
     padding: 25px;
@@ -21,19 +33,8 @@
     height: 72.5vh;
     width: 70vw;
 }
-    
-    
-/*--------------button--------------*/
-[type=button], #foto{
-    width: 22%;
-    height: 7vh;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0;
-    cursor: pointer;
-}
-    
+
+/* stile applicato all'input di classe display */
 .display input{
     width: 100%;
     height: 10vh;
@@ -42,19 +43,23 @@
     font-size: 30px;
     margin-bottom: 4vh;
 }
-    
+
+/* stile applicato ai div di classe button-row */
 .button-row{
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-#classic{
-    padding: 5px;
-}
-
-#linkToClassic{
-    margin-bottom: 30px;
+/* stile applicato ai tasti della calcolatrice (attraverso il tipo, la classe o gli id) */
+[type=button], #foto{
+    width: 22%;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
 #division, #multiplication, #minus, #plus, #equal{
@@ -81,18 +86,17 @@
     background-color: darkmagenta;
 }
 
-#fraction, #exponential, #bracketL, #bracketR, #pog2, #pog3, #ePog, #pog10, #root2, #root3, #root, #logN{
+.scientific-side{
     background-color: yellow;
 }
 
-#fraction:hover, #exponential:hover, #bracketL:hover, #bracketR:hover, #pog2:hover, #pog3:hover, #ePog:hover, #pog10:hover, #root2:hover, #root3:hover, #root:hover, #logN:hover{
+.scientific-side:hover{
     background-color: darkgoldenrod;
 }
-
-#log10, #pog, #module, #e, #pi, #sin, #cos, #tan{
+/* #fraction, #exponential, #bracketL, #bracketR, #pog2, #pog3, #ePog, #pog10, #root2, #root3, #root, #logN, #log10, #pog, #module, #e, #pi, #sin, #cos, #tan{
     background-color: yellow;
 }
 
-#log10:hover, #pog:hover, #module:hover, #e:hover, #pi:hover, #sin:hover, #cos:hover, #tan:hover{
+#fraction:hover, #exponential:hover, #bracketL:hover, #bracketR:hover, #pog2:hover, #pog3:hover, #ePog:hover, #pog10:hover, #root2:hover, #root3:hover, #root:hover, #logN:hover, #log10:hover, #pog:hover, #module:hover, #e:hover, #pi:hover, #sin:hover, #cos:hover, #tan:hover{
     background-color: darkgoldenrod;
-}
+} */

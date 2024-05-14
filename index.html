@@ -8,37 +8,37 @@
 </head>
 <body>
     
-    <div class="container">
+    <div class="container"> <!-- div che contiene calcolatrice e pulsante-link alla versione scientifica -->
         <a href="index2.html" id="linkToScientific"><button id="scientific">Passa alla Calcolatrice Scientifica</button></a>
-        <div class="calculator">
+        <div class="calculator"> <!-- div che modella la calcolatrice -->
             <div class="display">
                 <input type="text" id="display" readonly>
             </div>
-            <div class="button-row">
+            <div class="button-row"> <!-- prima riga di bottoni -->
                 <input type="button" id="AC" value="AC" class="operator" onclick="del()">
                 <input type="button" id="DEL" value="DEL" class="operator" onclick="delChar()">
                 <input type="button" id="point" value="." class="operator" onclick="append('.')">
                 <input type="button" id="division" value="/" class="operator" onclick="append('/')">
             </div>
-            <div class="button-row">
+            <div class="button-row"> <!-- seconda riga di bottoni -->
                 <input type="button" id="seven" value="7" class="number" onclick="append('7')">
                 <input type="button" id="eight" value="8" class="number" onclick="append('8')">
                 <input type="button" id="nine" value="9" class="number" onclick="append('9')">
                 <input type="button" id="multiplication" value="*" class="operator" onclick="append('*')">
             </div>
-            <div class="button-row">
+            <div class="button-row"> <!-- terza riga di bottoni -->
                 <input type="button" id="four" value="4" class="number" onclick="append('4')">
                 <input type="button" id="five" value="5" class="number" onclick="append('5')">
                 <input type="button" id="six" value="6" class="number" onclick="append('6')">
                 <input type="button" id="minus" value="-" class="operator" onclick="append('-')">
             </div>
-            <div class="button-row">
+            <div class="button-row"> <!-- quarta riga di bottoni -->
                 <input type="button" id="one" value="1" class="number" onclick="append('1')">
                 <input type="button" id="two" value="2" class="number" onclick="append('2')">
                 <input type="button" id="three" value="3" class="number" onclick="append('3')">
                 <input type="button" id="plus" value="+" class="operator" onclick="append('+')">
             </div>
-            <div class="button-row">
+            <div class="button-row"> <!-- quinta riga di bottoni -->
                 <input type="button" id="pog" value="^" class="operator" onclick="append('**')">
                 <input type="button" id="zero" value="0" class="number" onclick="append('0')">
                 <input type="button" id="module" value="%" class="operator" onclick="append('%')">

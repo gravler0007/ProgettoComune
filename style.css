@@ -1,9 +1,11 @@
+/* CSS reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 
+/* stile applicato al div di classe container */
 .container{
     width: 100vw;
     height: 100vh;
@@ -13,16 +15,41 @@
     align-items: center;
     justify-content: center;
 }
-    
+
+/* stile applicato al pulsante-link alla versione scientifica */
+#scientific{
+    padding: 5px;
+}
+
+#linkToScientific{
+    margin-bottom: 30px;
+}
+
+/* stile applicato al div di classe calculator */
 .calculator{
     background-color: black;
     padding: 25px;
     border-radius: 25px;
     height: 72.5vh;
 }
-    
-    
-/*--------------button--------------*/
+
+/* stile applicato all'input di classe display */
+.display input{
+    width: 100%;
+    height: 10vh;
+    color:black;
+    text-align: right;
+    font-size: 30px;
+    margin-bottom: 4vh;
+}
+
+/* stile applicato ai div di classe button-row */
+.button-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* stile applicato ai tasti della calcolatrice (attraverso il tipo, la classe o gli id) */
 [type=button]{
     width: 22%;
     height: 7vh;
@@ -33,28 +60,6 @@
     cursor: pointer;
 }
     
-.display input{
-    width: 100%;
-    height: 10vh;
-    color:black;
-    text-align: right;
-    font-size: 30px;
-    margin-bottom: 4vh;
-}
-    
-.button-row{
-    display: flex;
-    justify-content: space-between;
-}
-
-#scientific{
-    padding: 5px;
-}
-
-#linkToScientific{
-    margin-bottom: 30px;
-}
-
 #division, #multiplication, #minus, #plus, #equal, #module, #pog{
     background-color: orange;
 }
